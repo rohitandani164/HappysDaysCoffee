@@ -302,13 +302,6 @@ font-weight:bold;
 
 nav a:hover
 
-/* HAMBURGER ICON */
-
-.menu-toggle{
-display:none;
-font-size:28px;
-cursor:pointer;
-}
 
 /* MOBILE RESPONSIVE */
 
@@ -343,3 +336,85 @@ display:flex;
 }
 
 }
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:#3e2723;
+color:white;
+position:relative;
+}
+
+.logo{
+width:40px;
+border-radius:50%;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+/* hamburger */
+
+.menu-toggle{
+display:none;
+flex-direction:column;
+gap:5px;
+cursor:pointer;
+}
+
+.menu-toggle span{
+width:25px;
+height:3px;
+background:white;
+transition:0.3s;
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:flex;
+position:absolute;
+right:20px;
+top:22px;
+}
+
+nav{
+position:absolute;
+top:65px;
+right:20px;
+background:#3e2723;
+flex-direction:column;
+width:200px;
+padding:15px;
+border-radius:8px;
+display:none;
+}
+
+nav a{
+padding:10px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+nav.active{
+display:flex;
+}
+
+}
+
