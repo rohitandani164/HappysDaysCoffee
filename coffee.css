@@ -263,3 +263,83 @@ align-items:center;
 }
 
 }
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:#3e2723;
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo{
+width:45px;
+border-radius:50%;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover
+
+/* HAMBURGER ICON */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+/* hide menu initially */
+
+nav{
+position:absolute;
+top:70px;
+right:0;
+background:#3e2723;
+width:200px;
+flex-direction:column;
+text-align:center;
+display:none;
+padding:20px 0;
+border-radius:0 0 0 10px;
+}
+
+nav a{
+padding:12px 0;
+display:block;
+}
+
+nav.active{
+display:flex;
+}
+
+}
