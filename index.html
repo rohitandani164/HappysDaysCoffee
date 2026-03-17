@@ -232,6 +232,13 @@ aboutSection.style.display = "block";
 }
 
 </script>
+  if (aboutSection.style.display === "block") {
+aboutSection.style.display = "none";
+this.innerText = "Read More";
+} else {
+aboutSection.style.display = "block";
+this.innerText = "Show Less";
+}
 
 
 
