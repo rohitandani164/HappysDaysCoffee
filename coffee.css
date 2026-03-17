@@ -325,6 +325,17 @@ nav a:hover
 .menu-toggle{
 display:block;
 }
+  @media(max-width:768px){
+
+.logo{
+width:35px;
+}
+
+.logo-box h1{
+font-size:18px;
+}
+
+}
 
 /* hide menu initially */
 
