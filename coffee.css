@@ -29,11 +29,23 @@ width:50px;
 border-radius:50%;
 margin-right:10px;
 }
+.logo-box h1{
+font-size:20px;
+white-space:nowrap;
+}
+
 
 .logo-box{
 display:flex;
 align-items:center;
 }
+.logo-box{
+display:flex;
+align-items:center;
+gap:8px;
+overflow:hidden;
+}
+
 
 nav a{
 color:white;
@@ -111,6 +123,9 @@ font-size:18px;
 #about-details{
 display:none;
 margin-top:40px;
+}
+#about-details{
+display:none;
 }
 
 
